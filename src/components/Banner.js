@@ -14,7 +14,7 @@ export const Banner = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100);
 
 
-    const period = 1000;
+    const period = 2000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -44,7 +44,7 @@ export const Banner = () => {
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(200);
         }
     };
 
@@ -54,7 +54,7 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm webdecoded `}<span className="wrap">{text}</span></h1>
+                        <h1>{`Hi I'm Nikita `}<span className="wrap">{text}</span></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/> </button>
                     </Col>
